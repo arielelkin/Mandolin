@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AEAudioController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, readonly) AEAudioController *audioController;
 
 @end

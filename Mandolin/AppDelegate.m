@@ -7,12 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "AEAudioController.h"
+
+@interface AppDelegate()
+
+@property (nonatomic) AEAudioController *audioController;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.audioController = [[AEAudioController alloc]
+                            initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]
+                            inputEnabled:NO];
     return YES;
 }
 							
