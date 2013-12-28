@@ -28,7 +28,9 @@
     if ( !result ) {
         NSLog(@"Error starting audio engine: %@", errorAudioSetup.localizedDescription);
     }
-    
+
+    stk::Stk::setRawwavePath([[[NSBundle mainBundle] resourcePath] UTF8String]);
+
 }
 
 - (void)didReceiveMemoryWarning
