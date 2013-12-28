@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    NSError *errorAudioSetup = NULL;
+    BOOL result = [[appDelegate audioController] start:&errorAudioSetup];
+    if ( !result ) {
+        NSLog(@"Error starting audio engine: %@", errorAudioSetup.localizedDescription);
+    }
 }
 
 - (void)didReceiveMemoryWarning
