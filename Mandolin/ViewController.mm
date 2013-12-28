@@ -10,8 +10,10 @@
 #import "AppDelegate.h"
 
 #import "Mandolin.h"
+#import "AEBlockChannel.h"
 
 @interface ViewController ()
+@property (nonatomic) AEBlockChannel *myMandolinChannel;
 @property (nonatomic) stk::Mandolin *myMandolin;
 @end
 
@@ -31,7 +33,21 @@
 
     stk::Stk::setRawwavePath([[[NSBundle mainBundle] resourcePath] UTF8String]);
     
+    self.myMandolin = new stk::Mandolin(400);
+    self.myMandolin->setFrequency(400);
     
+    self.myMandolinChannel = [AEBlockChannel channelWithBlock:^(const AudioTimeStamp  *time,
+                                                                UInt32 frames,
+                                                                AudioBufferList *audio) {
+        for ( int i=0; i<frames; i++ ) {
+            
+            ((float*)audio->mBuffers[0].mData)[i] =
+            ((float*)audio->mBuffers[1].mData)[i] = self.myMandolin->tick();
+            
+        }
+    }];
+    
+    [[appDelegate audioController] addChannels:@[self.myMandolinChannel]];
 
 }
 
