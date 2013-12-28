@@ -12,7 +12,7 @@
 #import "Mandolin.h"
 
 @interface ViewController ()
-
+@property (nonatomic) stk::Mandolin *myMandolin;
 @end
 
 @implementation ViewController
@@ -30,8 +30,20 @@
     }
 
     stk::Stk::setRawwavePath([[[NSBundle mainBundle] resourcePath] UTF8String]);
+    
+    
 
 }
+
+-(IBAction)pluckMyMandolin{
+    self.myMandolin->pluck(1);
+}
+
+-(IBAction)changeFrequency:(UISlider *)sender{
+    self.myMandolin->setFrequency(sender.value);
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
