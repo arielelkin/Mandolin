@@ -21,6 +21,9 @@
 		B097DD88186E760B00884E69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DD6A186E760B00884E69 /* UIKit.framework */; };
 		B097DD90186E760B00884E69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B097DD8E186E760B00884E69 /* InfoPlist.strings */; };
 		B097DD92186E760B00884E69 /* MandolinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B097DD91186E760B00884E69 /* MandolinTests.m */; };
+		B097DDA3186E770B00884E69 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DDA0186E76FB00884E69 /* libTheAmazingAudioEngine.a */; };
+		B097DDA6186E770B00884E69 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DDA4186E770B00884E69 /* Accelerate.framework */; };
+		B097DDA7186E770B00884E69 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DDA5186E770B00884E69 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B097DD62186E760B00884E69;
 			remoteInfo = Mandolin;
+		};
+		B097DD9F186E76FB00884E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+		B097DDA1186E770400884E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C215CEB1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +70,9 @@
 		B097DD8D186E760B00884E69 /* MandolinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MandolinTests-Info.plist"; sourceTree = "<group>"; };
 		B097DD8F186E760B00884E69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B097DD91186E760B00884E69 /* MandolinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MandolinTests.m; sourceTree = "<group>"; };
+		B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
+		B097DDA4186E770B00884E69 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B097DDA5186E770B00884E69 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B097DDA6186E770B00884E69 /* Accelerate.framework in Frameworks */,
+				B097DDA7186E770B00884E69 /* AudioToolbox.framework in Frameworks */,
+				B097DDA3186E770B00884E69 /* libTheAmazingAudioEngine.a in Frameworks */,
 				B097DD69186E760B00884E69 /* CoreGraphics.framework in Frameworks */,
 				B097DD6B186E760B00884E69 /* UIKit.framework in Frameworks */,
 				B097DD67186E760B00884E69 /* Foundation.framework in Frameworks */,
@@ -82,6 +105,7 @@
 		B097DD5A186E760B00884E69 = {
 			isa = PBXGroup;
 			children = (
+				B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */,
 				B097DD6C186E760B00884E69 /* Mandolin */,
 				B097DD8B186E760B00884E69 /* MandolinTests */,
 				B097DD65186E760B00884E69 /* Frameworks */,
@@ -101,6 +125,8 @@
 		B097DD65186E760B00884E69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B097DDA4186E770B00884E69 /* Accelerate.framework */,
+				B097DDA5186E770B00884E69 /* AudioToolbox.framework */,
 				B097DD66186E760B00884E69 /* Foundation.framework */,
 				B097DD68186E760B00884E69 /* CoreGraphics.framework */,
 				B097DD6A186E760B00884E69 /* UIKit.framework */,
@@ -152,6 +178,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B097DD9C186E76FB00884E69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B097DDA0186E76FB00884E69 /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +200,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B097DDA2186E770400884E69 /* PBXTargetDependency */,
 			);
 			name = Mandolin;
 			productName = Mandolin;
@@ -215,6 +250,12 @@
 			mainGroup = B097DD5A186E760B00884E69;
 			productRefGroup = B097DD64186E760B00884E69 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B097DD9C186E76FB00884E69 /* Products */;
+					ProjectRef = B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B097DD62186E760B00884E69 /* Mandolin */,
@@ -222,6 +263,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B097DDA0186E76FB00884E69 /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = B097DD9F186E76FB00884E69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B097DD61186E760B00884E69 /* Resources */ = {
@@ -270,6 +321,11 @@
 			isa = PBXTargetDependency;
 			target = B097DD62186E760B00884E69 /* Mandolin */;
 			targetProxy = B097DD89186E760B00884E69 /* PBXContainerItemProxy */;
+		};
+		B097DDA2186E770400884E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TheAmazingAudioEngine;
+			targetProxy = B097DDA1186E770400884E69 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,6 +436,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mandolin/Mandolin-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					TheAmazingAudioEngine/TheAmazingAudioEngine/,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "Mandolin/Mandolin-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -393,6 +454,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mandolin/Mandolin-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					TheAmazingAudioEngine/TheAmazingAudioEngine/,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "Mandolin/Mandolin-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
