@@ -6,8 +6,9 @@
 //  Copyright (c) 2013 Bellpipe. All rights reserved.
 //
 
+@class AEAudioController;
+
 #import <UIKit/UIKit.h>
-#import "AEAudioController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

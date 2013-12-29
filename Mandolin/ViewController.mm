@@ -25,6 +25,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
     NSError *errorAudioSetup = NULL;
     BOOL result = [[appDelegate audioController] start:&errorAudioSetup];
     if ( !result ) {

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D5157977-55BD-464F-987B-9AD9C52FD24A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mandolin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6AD831FB-476A-474C-A38B-E7FD42C9E04E</key>
+		<string>ssh://github.com/bellpipe/Mandolin.git</string>
+		<key>E1E2B411-5E50-4ABF-9BCF-2C13A20A9AA0</key>
+		<string>https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mandolin.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6AD831FB-476A-474C-A38B-E7FD42C9E04E</key>
+		<string>../..</string>
+		<key>E1E2B411-5E50-4ABF-9BCF-2C13A20A9AA0</key>
+		<string>../../TheAmazingAudioEngine</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/bellpipe/Mandolin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6AD831FB-476A-474C-A38B-E7FD42C9E04E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6AD831FB-476A-474C-A38B-E7FD42C9E04E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mandolin</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E1E2B411-5E50-4ABF-9BCF-2C13A20A9AA0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TheAmazingAudioEngine</string>
+		</dict>
+	</array>
+</dict>
+</plist>
