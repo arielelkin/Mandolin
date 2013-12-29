@@ -29,7 +29,7 @@
 /***************************************************/
 
 #include "ModalBar.h"
-#include "SKINI_msg.h"
+#include "SKINI.msg"
 #include <cmath>
 
 namespace stk {

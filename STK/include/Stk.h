@@ -510,6 +510,19 @@ const StkFloat SRATE = 44100.0;
 // more latency.
 const unsigned int RT_BUFFER_SIZE = 512;
 
+// The default rawwave path value is set with the preprocessor
+// definition RAWWAVE_PATH.  This can be specified as an argument to
+// the configure script, in an integrated development environment, or
+// below.  The global STK rawwave path variable can be dynamically set
+// with the Stk::setRawwavePath() function.  This value is
+// concatenated to the beginning of all references to rawwave files in
+// the various STK core classes (ex. Clarinet.cpp).  If you wish to
+// move the rawwaves directory to a different location in your file
+// system, you will need to set this path definition appropriately.
+#if !defined(RAWWAVE_PATH)
+  #define RAWWAVE_PATH "../../rawwaves/"
+#endif
+
 const StkFloat PI           = 3.14159265358979;
 const StkFloat TWO_PI       = 2 * PI;
 const StkFloat ONE_OVER_128 = 0.0078125;
@@ -525,32 +538,7 @@ const StkFloat ONE_OVER_128 = 0.0078125;
 #elif defined(__MACOSX_CORE__) || defined(__UNIX_JACK__)
   #define __OS_MACOSX__
   #define __STK_REALTIME__
-#elif defined(TARGET_IPHONE_SIMULATOR) || defined(TARGET_OS_IPHONE)
-  #define __OS_IPHONE__ "PHONE"
-  #define __STK_REALTIME__
 #endif
-    
-// The default rawwave path value is set with the preprocessor
-// definition RAWWAVE_PATH.  This can be specified as an argument to
-// the configure script, in an integrated development environment, or
-// below.  The global STK rawwave path variable can be dynamically set
-// with the Stk::setRawwavePath() function.  This value is
-// concatenated to the beginning of all references to rawwave files in
-// the various STK core classes (ex. Clarinet.cpp).  If you wish to
-// move the rawwaves directory to a different location in your file
-// system, you will need to set this path definition appropriately.
-#if !defined(RAWWAVE_PATH)
-  #if defined(__OS_IPHONE__)
-    #define RAWWAVE_PATH [[[NSBundle mainBundle] resourcePath] UTF8String]
-  #else
-    #define RAWWAVE_PATH "../../rawwaves/"
-#endif
-
-
-  
-#endif
-    
-
 
 } // stk namespace
 

@@ -24,7 +24,7 @@
 /***************************************************/
 
 #include "FM.h"
-#include "SKINI_msg.h"
+#include "SKINI.msg"
 
 namespace stk {
 

@@ -31,7 +31,7 @@
 #include "Guitar.h"
 #include "FileWvIn.h"
 #include "Noise.h"
-#include "SKINI_msg.h"
+#include "SKINI.msg"
 #include <cmath>
 
 namespace stk {

@@ -35,7 +35,7 @@
 #include "Messager.h"
 #include <iostream>
 #include <algorithm>
-#include "SKINI_msg.h"
+#include "SKINI.msg"
 
 namespace stk {
 

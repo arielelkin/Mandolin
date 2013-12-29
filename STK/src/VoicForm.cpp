@@ -27,7 +27,7 @@
 
 #include "VoicForm.h"
 #include "Phonemes.h"
-#include "SKINI_msg.h"
+#include "SKINI.msg"
 #include <cstring>
 #include <cmath>
 
