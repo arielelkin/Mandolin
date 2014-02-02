@@ -52,20 +52,13 @@
 
 }
 
--(IBAction)pluckMyMandolin{
+-(IBAction)pluckMyMandolin {
     self.myMandolin->pluck(1);
 }
 
--(IBAction)changeFrequency:(UISlider *)sender{
+-(IBAction)changeFrequency:(UISlider *)sender {
     self.myMandolin->setFrequency(sender.value);
 }
 
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
