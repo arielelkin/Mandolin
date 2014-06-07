@@ -21,9 +21,11 @@
 		B097DD88186E760B00884E69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DD6A186E760B00884E69 /* UIKit.framework */; };
 		B097DD90186E760B00884E69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B097DD8E186E760B00884E69 /* InfoPlist.strings */; };
 		B097DD92186E760B00884E69 /* MandolinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B097DD91186E760B00884E69 /* MandolinTests.m */; };
-		B097DDA3186E770B00884E69 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DDA0186E76FB00884E69 /* libTheAmazingAudioEngine.a */; };
 		B097DDA6186E770B00884E69 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DDA4186E770B00884E69 /* Accelerate.framework */; };
 		B097DDA7186E770B00884E69 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B097DDA5186E770B00884E69 /* AudioToolbox.framework */; };
+		B0A661EE1927313B0064C7EC /* libSTK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A661EB192730EC0064C7EC /* libSTK.a */; };
+		B0A661EF1927316F0064C7EC /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A661E2192730A70064C7EC /* libTheAmazingAudioEngine.a */; };
+		B0A661F0192734100064C7EC /* rawwaves.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0A661ED192730EC0064C7EC /* rawwaves.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,33 @@
 			remoteGlobalIDString = B097DD62186E760B00884E69;
 			remoteInfo = Mandolin;
 		};
-		B097DD9F186E76FB00884E69 /* PBXContainerItemProxy */ = {
+		B0A661E1192730A70064C7EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */;
+			containerPortal = B0A661DD192730A70064C7EC /* TheAmazingAudioEngine.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
 			remoteInfo = TheAmazingAudioEngine;
 		};
-		B097DDA1186E770400884E69 /* PBXContainerItemProxy */ = {
+		B0A661E3192730B30064C7EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */;
+			containerPortal = B0A661DD192730A70064C7EC /* TheAmazingAudioEngine.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 4C215CEB1523A7D500D36CAD;
 			remoteInfo = TheAmazingAudioEngine;
+		};
+		B0A661EA192730EC0064C7EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0A661E5192730EC0064C7EC /* STK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0AC5BEE18CB31DE00D860C0;
+			remoteInfo = STK;
+		};
+		B0A661EC192730EC0064C7EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0A661E5192730EC0064C7EC /* STK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0EC33B718CB73A70005787B;
+			remoteInfo = rawwaves;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,9 +86,10 @@
 		B097DD8D186E760B00884E69 /* MandolinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MandolinTests-Info.plist"; sourceTree = "<group>"; };
 		B097DD8F186E760B00884E69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B097DD91186E760B00884E69 /* MandolinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MandolinTests.m; sourceTree = "<group>"; };
-		B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
 		B097DDA4186E770B00884E69 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		B097DDA5186E770B00884E69 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B0A661DD192730A70064C7EC /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = Libraries/TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
+		B0A661E5192730EC0064C7EC /* STK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STK.xcodeproj; path = Libraries/stk/iOS/STK.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A661EF1927316F0064C7EC /* libTheAmazingAudioEngine.a in Frameworks */,
+				B0A661EE1927313B0064C7EC /* libSTK.a in Frameworks */,
 				B097DDA6186E770B00884E69 /* Accelerate.framework in Frameworks */,
 				B097DDA7186E770B00884E69 /* AudioToolbox.framework in Frameworks */,
-				B097DDA3186E770B00884E69 /* libTheAmazingAudioEngine.a in Frameworks */,
 				B097DD69186E760B00884E69 /* CoreGraphics.framework in Frameworks */,
 				B097DD6B186E760B00884E69 /* UIKit.framework in Frameworks */,
 				B097DD67186E760B00884E69 /* Foundation.framework in Frameworks */,
@@ -105,7 +123,8 @@
 		B097DD5A186E760B00884E69 = {
 			isa = PBXGroup;
 			children = (
-				B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */,
+				B0A661E5192730EC0064C7EC /* STK.xcodeproj */,
+				B0A661DD192730A70064C7EC /* TheAmazingAudioEngine.xcodeproj */,
 				B097DD6C186E760B00884E69 /* Mandolin */,
 				B097DD8B186E760B00884E69 /* MandolinTests */,
 				B097DD65186E760B00884E69 /* Frameworks */,
@@ -178,10 +197,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B097DD9C186E76FB00884E69 /* Products */ = {
+		B0A661DE192730A70064C7EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B097DDA0186E76FB00884E69 /* libTheAmazingAudioEngine.a */,
+				B0A661E2192730A70064C7EC /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0A661E6192730EC0064C7EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0A661EB192730EC0064C7EC /* libSTK.a */,
+				B0A661ED192730EC0064C7EC /* rawwaves.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,7 +228,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B097DDA2186E770400884E69 /* PBXTargetDependency */,
+				B0A661E4192730B30064C7EC /* PBXTargetDependency */,
 			);
 			name = Mandolin;
 			productName = Mandolin;
@@ -231,7 +259,7 @@
 		B097DD5B186E760B00884E69 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Bellpipe;
 				TargetAttributes = {
 					B097DD83186E760B00884E69 = {
@@ -252,8 +280,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B097DD9C186E76FB00884E69 /* Products */;
-					ProjectRef = B097DD9B186E76FB00884E69 /* TheAmazingAudioEngine.xcodeproj */;
+					ProductGroup = B0A661E6192730EC0064C7EC /* Products */;
+					ProjectRef = B0A661E5192730EC0064C7EC /* STK.xcodeproj */;
+				},
+				{
+					ProductGroup = B0A661DE192730A70064C7EC /* Products */;
+					ProjectRef = B0A661DD192730A70064C7EC /* TheAmazingAudioEngine.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -265,11 +297,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B097DDA0186E76FB00884E69 /* libTheAmazingAudioEngine.a */ = {
+		B0A661E2192730A70064C7EC /* libTheAmazingAudioEngine.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libTheAmazingAudioEngine.a;
-			remoteRef = B097DD9F186E76FB00884E69 /* PBXContainerItemProxy */;
+			remoteRef = B0A661E1192730A70064C7EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0A661EB192730EC0064C7EC /* libSTK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSTK.a;
+			remoteRef = B0A661EA192730EC0064C7EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0A661ED192730EC0064C7EC /* rawwaves.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = rawwaves.bundle;
+			remoteRef = B0A661EC192730EC0064C7EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -282,6 +328,7 @@
 				B097DD7F186E760B00884E69 /* Images.xcassets in Resources */,
 				B097DD71186E760B00884E69 /* InfoPlist.strings in Resources */,
 				B097DD7A186E760B00884E69 /* Main.storyboard in Resources */,
+				B0A661F0192734100064C7EC /* rawwaves.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,10 +369,10 @@
 			target = B097DD62186E760B00884E69 /* Mandolin */;
 			targetProxy = B097DD89186E760B00884E69 /* PBXContainerItemProxy */;
 		};
-		B097DDA2186E770400884E69 /* PBXTargetDependency */ = {
+		B0A661E4192730B30064C7EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TheAmazingAudioEngine;
-			targetProxy = B097DDA1186E770400884E69 /* PBXContainerItemProxy */;
+			targetProxy = B0A661E3192730B30064C7EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -361,7 +408,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -390,6 +436,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					stk/include/,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +451,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -423,6 +473,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					stk/include/,
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -437,8 +492,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mandolin/Mandolin-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					STK/include/,
-					TheAmazingAudioEngine/TheAmazingAudioEngine/,
+					Libraries/stk/include/,
+					Libraries/TheAmazingAudioEngine/TheAmazingAudioEngine/,
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
@@ -456,8 +511,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mandolin/Mandolin-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					STK/include/,
-					TheAmazingAudioEngine/TheAmazingAudioEngine/,
+					Libraries/stk/include/,
+					Libraries/TheAmazingAudioEngine/TheAmazingAudioEngine/,
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
@@ -470,7 +525,6 @@
 		B097DD99186E760B00884E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mandolin.app/Mandolin";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -493,7 +547,6 @@
 		B097DD9A186E760B00884E69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mandolin.app/Mandolin";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
