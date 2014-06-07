@@ -1,3 +1,9 @@
 [submodule "TheAmazingAudioEngine"]
 	path = TheAmazingAudioEngine
 	url = https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine.git
+[submodule "Libraries/TheAmazingAudioEngine"]
+	path = Libraries/TheAmazingAudioEngine
+	url = https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine.git
+[submodule "Libraries/stk"]
+	path = Libraries/stk
+	url = git@github.com:thestk/stk.git
